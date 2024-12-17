@@ -27,9 +27,6 @@
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ path('app_register') }}">Register</a>
-        </li>
         {% if app.user %}
         <li class="nav-item">
           <a class="nav-link" href="{{ path('app_livre_index') }}">Books</a>
@@ -43,6 +40,9 @@
         {% else %}
         <li class="nav-item">
           <a class="nav-link" href="{{ path('app_login') }}">Login</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="{{ path('app_register') }}">Register</a>
         </li>
         {% endif %}
       </ul>
